@@ -10,7 +10,6 @@ module.exports = (function(app){
 
         var newScores = req.body.scores;
         var scores = [];
-        var friendCount = 0;
         var bestMatch = 0;
 
         for (var i = 0; i < friends.length; i++) {
@@ -31,8 +30,7 @@ module.exports = (function(app){
         var friendMatch = friends[bestMatch];
           res.json(friendMatch);
           console.log(friendMatch);
-      
-          //pushes new submission into the friendsList array
+
           friends.push(req.body);
     });
 });
