@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h1>Survey Questions</h1>
+        <a class="btn btn-warning" href="!#">Home</a>
         <hr>
         <h2>About You</h2>
             <form>
@@ -166,7 +167,7 @@
               <!--<img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">-->
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
@@ -194,7 +195,7 @@
                    ]
                 }
             var currentURL = window.location.origin;
-            // AJAX post the data to the friends API. 
+
             $.post(currentURL + "/api/friends", userAnswer, function(data) {
                     console.log(data);
                 $("#matchName").text(data.name);
