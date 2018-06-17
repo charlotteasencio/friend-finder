@@ -22,13 +22,15 @@ module.exports = (function(app){
         }
 
         if (difference < total) {
-            //console.log('Closest match found = ' + difference);
-		    //console.log('Friend name = ' + friends[i].name);
+            console.log('Closest match found = ' + difference);
+		    console.log('Friend name = ' + friends[i].name);
             // console.log('Friend image = ' + friends[i].photo);
             
-            totalDifference = diff;
+            totalDifference = difference;
             matchName = friends[i].name;
             //matchImage = friends[i].photo;
+
+            console.log(matchName);
         }
     }
     // Add new user
