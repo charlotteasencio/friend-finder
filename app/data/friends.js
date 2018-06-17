@@ -2,7 +2,7 @@ var friendsArray = [
 
 {
     "name":"Chandler",
-    "photo":"https://postimg.cc/image/5mjwlqrn1/",
+    "photo":"https://s22.postimg.cc/baq7cmvzl/chandler.png",
     "scores":[
         4,
         2,
@@ -18,7 +18,7 @@ var friendsArray = [
     },
     {
       "name":"Rachel",
-      "photo":"https://postimg.cc/image/59sifh9cd/",
+      "photo":"https://s22.postimg.cc/4x149ar2p/rachel.jpg",
       "scores":[
           2,
           2,
@@ -34,7 +34,7 @@ var friendsArray = [
     },
     {
         "name":"Phoebe",
-        "photo":"https://postimg.cc/image/bnhlivbp9/",
+        "photo":"https://s22.postimg.cc/orn5vk3r5/phoebe.jpg",
         "scores":[
             2,
             2,
@@ -50,7 +50,7 @@ var friendsArray = [
     },
     {
         "name":"Ross",
-        "photo":"https://postimg.cc/image/hbnw9uvi5/",
+        "photo":"https://s22.postimg.cc/59sifpm9t/ross.png",
         "scores":[
             4,
             2,
@@ -66,7 +66,7 @@ var friendsArray = [
     },
     {
         "name":"Joey",
-        "photo":"https://postimg.cc/image/4yb22jl4t/",
+        "photo":"https://s22.postimg.cc/az8qzm7r5/joey.jpg",
         "scores":[
             1,
             2,
@@ -82,7 +82,7 @@ var friendsArray = [
     },
     {
         "name":"Monica",
-        "photo":"https://postimg.cc/image/rn09272jh/",
+        "photo":"https://s22.postimg.cc/og5piki3l/monica.png",
         "scores":[
             5,
             5,
