@@ -164,7 +164,7 @@
             </div>
             <div class="modal-body">
               <h2 id="matchName"></h2>
-              <!--<img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">-->
+              <img id="matchImg">
             </div>
             <div class="modal-footer">
             <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -197,9 +197,8 @@
             var currentURL = window.location.origin;
 
             $.post(currentURL + "/api/friends", userAnswer, function(data) {
-                    console.log(data);
                 $("#matchName").text(data.name);
-                //$('#matchImg').attr("src", data.photo);
+                $('#matchImg').attr("src", data.photo);
 
                 $("#resultsModal").modal('toggle');
             });
