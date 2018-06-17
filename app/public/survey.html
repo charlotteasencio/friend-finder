@@ -159,7 +159,8 @@
             <h4 class="modal-title">Your friend match</h4>
           </div>
           <div class="modal-body">
-            <p>test</p>
+            <h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -169,14 +170,14 @@
     </div><!-- /.modal -->
 
 	<script type="text/javascript">
-		/*$(document).ready(function() {
-			$('.modal').modal({
+		$(document).ready(function() {
+			$('#modal').modal({
 				dismissible: false, // Modal can be dismissed by clicking outside of the modal
 				opacity: .5, // Opacity of modal background
 				inDuration: 300, // Transition in duration
 				outDuration: 200, // Transition out duration
             });
-        });*/
+        });
             
         $("#submitButton").on("click", function(event){
             event.preventDefault();
