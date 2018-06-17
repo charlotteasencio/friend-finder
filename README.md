@@ -2,15 +2,15 @@
 
 This is a program that allows a user to find another user who is their closest "friend match". Users rate themselves on ten statement using a scale from 1-(strongly disagree) to 5-(strongly agree) and their responses are compared to find the closest match. 
 
-# Technologies used
-*Node.js
-*Express
+## Technologies used
+1. Node.js
+1. Express
 
-# Demo
+## Demo
 
 A demo of Friend Finder can be found deployed to heroku [here](https://hidden-beyond-12623.herokuapp.com/). 
 
-# To run 
+## To run 
 
 Clone the repository for github https://github.com/charlotteasencio/friend-finder.git, navigate into the friend-finder directory in your command line and use npm install. 
 
