@@ -8,36 +8,31 @@ module.exports = (function(app){
 
     app.post("/api/friends", function(req, res){
 
-        var userAnswer = req.body;
-        var userScores = userAnswer.scores;
-        
-        var friendMatch = '';
-		//var matchImage = '';
-        var total = 500;
+        var newScores = req.body.scores;
+        var scores = [];
+        var friendCount = 0;
+        var bestMatch = 0;
 
         for (var i = 0; i < friends.length; i++) {
             var difference = 0;
-			for (var j = 0; j < userScores.length; j++) {
-				difference += Math.abs(friends[i].scores[j] - userScores[j]);
+			for (var j = 0; j < newScores.length; j++) {
+				difference += (Math.abs(parseInt(friends[i].scores[j]) - parseInt(newScores[j])));
         }
 
-        if (difference < total) {
-            console.log('Closest match found = ' + difference);
-		    console.log('Friend name = ' + friends[i].name);
-            // console.log('Friend image = ' + friends[i].photo);
-            
-            totalDifference = difference;
-            matchName = friends[i].name;
-            //matchImage = friends[i].photo;
-
-            console.log(matchName);
+            scores.push(difference);
         }
-    }
-    // Add new user
-	friends.push(userAnswer);
 
-	// Give Response
-res.json({status: 'OK', friendMatch: friendMatch});
+        for(var i=0; i<scores.length; i++){
+            if(scores[i] <= scores[bestMatch]){
+              bestMatch = i;
+            }
+          }
 
+        var friendMatch = friends[bestMatch];
+          res.json(friendMatch);
+          console.log(friendMatch);
+      
+          //pushes new submission into the friendsList array
+          friends.push(req.body);
     });
 });
